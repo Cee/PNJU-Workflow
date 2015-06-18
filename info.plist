@@ -37,10 +37,8 @@
 				<integer>2</integer>
 				<key>keyword</key>
 				<string>pnju</string>
-				<key>subtext</key>
-				<string>Login</string>
 				<key>text</key>
-				<string>PNJU</string>
+				<string>登录</string>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -70,20 +68,58 @@
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>63</integer>
+				<key>keyword</key>
+				<string>pnju</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>script</key>
+				<string>/usr/local/bin/node query.js</string>
+				<key>title</key>
+				<string>状态查询中 σ`∀′) ﾟ∀ﾟ)σ</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7E29944E-66A5-455D-9C37-B26D4C993EF3</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>7E29944E-66A5-455D-9C37-B26D4C993EF3</key>
+		<dict>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
 		<key>AF461C32-D146-49AE-925F-8CC202A903C4</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
 		</dict>
 		<key>B51902E0-E0FC-4347-A451-9AA50FF899F6</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
 		</dict>
 		<key>F3408545-6500-4333-AEDB-AC51882C6A65</key>
 		<dict>
