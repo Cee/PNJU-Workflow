@@ -8,6 +8,10 @@ An Alfred Workflow to Login PNJU.
 
 Open `post.js` file and complete the `username` and `password`.
 
+## Screenshot
+
+![Screenshot](Screenshot.jpeg)
+
 ## See Also
 
 + [Windows](https://github.com/miaoxw/Auto-p.nju)
