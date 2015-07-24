@@ -10,24 +10,22 @@ function parseTime(time) {
 }
 
 request.post({
-	url: 'http://p.nju.edu.cn/portal_io/proxy/userinfo',
+	url: 'http://p.nju.edu.cn/portal_io/getinfo',
 }, function(error, response, body) {
 	if (!error && response.statusCode == 200) {
 		var result = JSON.parse(body);
-		// console.log(body);
-		if (result.reply_code == 3010101) {
-			result = result.results;
+		if (result.reply_code == 0) {
+			result = result.userinfo;
 			item.addItem(0, "登录成功（´・∀・`）", "", "icon.png");
 			item.addItem(1, "学号", result.username, "icon.png");
 			item.addItem(2, "姓名", result.fullname, "icon.png");
 			item.addItem(3, "接入区域", result.area_name, "icon.png");
 			item.addItem(4, "服务类别", result.service_name, "icon.png");
-			item.addItem(5, "网费余额", result.payamount, "icon.png");
-			item.addItem(6, "当月在线", parseTime(result.total_time), "icon.png");
+			item.addItem(5, "网费余额", result.balance / 100, "icon.png");
+			// item.addItem(6, "当月在线", parseTime(result.total_time), "icon.png");
 			return console.log(item);
 		} else {
-			// TODO: handle error
-			if (result.reply_code == 3010105) {
+			if (result.reply_code == 2) {
 				item.addItem(0, "未获取到在线信息(´゜Д゜｀)", "", "icon.png");
 				return console.log(item);
 			} else {
