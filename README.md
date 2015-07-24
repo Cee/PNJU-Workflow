@@ -17,6 +17,7 @@ Open `post.js` file and complete the `username` and `password`.
 + [Windows](https://github.com/miaoxw/Auto-p.nju)
 + [Mac](https://github.com/Cee/PNJU-TodayWidget)
 + [iOS &  Watch](https://github.com/Cee/PNJU-Watch)
++ [Android](https://github.com/padeoe/AutoConnect)
 
 ## Dependency
 
